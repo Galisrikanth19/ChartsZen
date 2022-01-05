@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		0475C8AD2784CE7C000CCFBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475C8AC2784CE7C000CCFBE /* AppDelegate.swift */; };
 		0475C8AF2784CE7C000CCFBE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475C8AE2784CE7C000CCFBE /* SceneDelegate.swift */; };
-		0475C8B12784CE7C000CCFBE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475C8B02784CE7C000CCFBE /* ViewController.swift */; };
+		0475C8B12784CE7C000CCFBE /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475C8B02784CE7C000CCFBE /* LineChartViewController.swift */; };
 		0475C8B42784CE7C000CCFBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0475C8B22784CE7C000CCFBE /* Main.storyboard */; };
 		0475C8B62784CE7E000CCFBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0475C8B52784CE7E000CCFBE /* Assets.xcassets */; };
 		0475C8B92784CE7E000CCFBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0475C8B72784CE7E000CCFBE /* LaunchScreen.storyboard */; };
+		0475C8C22784D966000CCFBE /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475C8C12784D966000CCFBE /* BarChartViewController.swift */; };
+		0475C8C42784D975000CCFBE /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475C8C32784D975000CCFBE /* PieChartViewController.swift */; };
+		0475C8C82784DBFE000CCFBE /* ChartsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475C8C72784DBFE000CCFBE /* ChartsViewModel.swift */; };
+		0475C8CA2784DD84000CCFBE /* ChartsJsonData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0475C8C92784DD84000CCFBE /* ChartsJsonData.json */; };
+		0475C8CE27852082000CCFBE /* PlayersDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475C8CD27852082000CCFBE /* PlayersDataModel.swift */; };
+		0475C8D727852F42000CCFBE /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475C8D627852F42000CCFBE /* PlayerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0475C8A92784CE7C000CCFBE /* ChartsZen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsZen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0475C8AC2784CE7C000CCFBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0475C8AE2784CE7C000CCFBE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0475C8B02784CE7C000CCFBE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0475C8B02784CE7C000CCFBE /* LineChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
 		0475C8B32784CE7C000CCFBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0475C8B52784CE7E000CCFBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0475C8B82784CE7E000CCFBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0475C8BA2784CE7E000CCFBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0475C8C12784D966000CCFBE /* BarChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
+		0475C8C32784D975000CCFBE /* PieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
+		0475C8C72784DBFE000CCFBE /* ChartsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewModel.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		0475C8C92784DD84000CCFBE /* ChartsJsonData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChartsJsonData.json; sourceTree = "<group>"; };
+		0475C8CD27852082000CCFBE /* PlayersDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersDataModel.swift; sourceTree = "<group>"; };
+		0475C8D627852F42000CCFBE /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +70,59 @@
 			children = (
 				0475C8AC2784CE7C000CCFBE /* AppDelegate.swift */,
 				0475C8AE2784CE7C000CCFBE /* SceneDelegate.swift */,
-				0475C8B02784CE7C000CCFBE /* ViewController.swift */,
-				0475C8B22784CE7C000CCFBE /* Main.storyboard */,
-				0475C8B52784CE7E000CCFBE /* Assets.xcassets */,
+				0475C8D327852731000CCFBE /* SourceCode */,
+				0475C8D427852745000CCFBE /* Resources */,
 				0475C8B72784CE7E000CCFBE /* LaunchScreen.storyboard */,
 				0475C8BA2784CE7E000CCFBE /* Info.plist */,
 			);
 			path = ChartsZen;
+			sourceTree = "<group>";
+		};
+		0475C8C62784DB9F000CCFBE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0475C8D627852F42000CCFBE /* PlayerTableViewCell.swift */,
+				0475C8B02784CE7C000CCFBE /* LineChartViewController.swift */,
+				0475C8C12784D966000CCFBE /* BarChartViewController.swift */,
+				0475C8C32784D975000CCFBE /* PieChartViewController.swift */,
+				0475C8B22784CE7C000CCFBE /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0475C8D027852710000CCFBE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0475C8CD27852082000CCFBE /* PlayersDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0475C8D12785271D000CCFBE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0475C8C72784DBFE000CCFBE /* ChartsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0475C8D327852731000CCFBE /* SourceCode */ = {
+			isa = PBXGroup;
+			children = (
+				0475C8D027852710000CCFBE /* Model */,
+				0475C8D12785271D000CCFBE /* ViewModel */,
+				0475C8C62784DB9F000CCFBE /* View */,
+			);
+			path = SourceCode;
+			sourceTree = "<group>";
+		};
+		0475C8D427852745000CCFBE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0475C8B52784CE7E000CCFBE /* Assets.xcassets */,
+				0475C8C92784DD84000CCFBE /* ChartsJsonData.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +185,7 @@
 				0475C8B92784CE7E000CCFBE /* LaunchScreen.storyboard in Resources */,
 				0475C8B62784CE7E000CCFBE /* Assets.xcassets in Resources */,
 				0475C8B42784CE7C000CCFBE /* Main.storyboard in Resources */,
+				0475C8CA2784DD84000CCFBE /* ChartsJsonData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +196,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0475C8B12784CE7C000CCFBE /* ViewController.swift in Sources */,
+				0475C8B12784CE7C000CCFBE /* LineChartViewController.swift in Sources */,
+				0475C8C82784DBFE000CCFBE /* ChartsViewModel.swift in Sources */,
+				0475C8C22784D966000CCFBE /* BarChartViewController.swift in Sources */,
+				0475C8CE27852082000CCFBE /* PlayersDataModel.swift in Sources */,
+				0475C8D727852F42000CCFBE /* PlayerTableViewCell.swift in Sources */,
 				0475C8AD2784CE7C000CCFBE /* AppDelegate.swift in Sources */,
+				0475C8C42784D975000CCFBE /* PieChartViewController.swift in Sources */,
 				0475C8AF2784CE7C000CCFBE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,7 +360,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Saanvi.ChartsZen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +379,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Saanvi.ChartsZen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -1,0 +1,60 @@
+{
+    "status" : true,
+        "players" : [
+            {
+                "name" : "Sachin",
+                "nationality" : "Indian",
+                "status" : "Retired",
+                "history" : [
+                    {
+                        "modified" : "01 Jan, 4:00PM",
+                        "score" : 100
+                    },
+                    {
+                        "modified" : "02 Jan, 4:30PM",
+                        "score" : 6
+                    },
+                    {
+                        "modified" : "03 Jan, 1:00PM",
+                        "score" : 180
+                    },
+                    {
+                        "modified" : "04 Jan, 7:00PM",
+                        "score" : 18
+                    },
+                    {
+                        "modified" : "05 Jan, 5:00PM",
+                        "score" : 100
+                    }
+                ]
+            },
+            {
+                "name" : "Sehwag",
+                "nationality" : "Indian",
+                "status" : "Retired",
+                "history" : [
+                    {
+                        "modified" : "01 Jan, 4:00PM",
+                        "score" : 300
+                    },
+                    {
+                        "modified" : "02 Jan, 4:30PM",
+                        "score" : 0
+                    },
+                    {
+                        "modified" : "03 Jan, 1:00PM",
+                        "score" : 480
+                    },
+                    {
+                        "modified" : "04 Jan, 7:00PM",
+                        "score" : 188
+                    },
+                    {
+                        "modified" : "05 Jan, 5:00PM",
+                        "score" : 10
+                    }
+                ]
+            }
+        ],
+    "message" : "All players data fetched"
+}
