@@ -6,11 +6,14 @@
 //
 
 import UIKit
+import Charts
 
 class LineChartViewController: UIViewController {
     
     @IBOutlet var tbv: UITableView!
+    @IBOutlet weak var lineChartView: LineChartView!
     
+    var selIndex = 0
     var chartsVM:ChartsViewModel = ChartsViewModel()
     var dataArr:[Player] = [Player]() {
         didSet {
@@ -37,7 +40,9 @@ class LineChartViewController: UIViewController {
     
     private func allClosures() {
         chartsVM.receivedJsonData = { players in
-            self.dataArr = players
+            let player = Player(_name: "All Players")
+            self.dataArr.append(player)
+            self.dataArr.append(contentsOf: players)
         }
     }
     
@@ -51,7 +56,12 @@ extension LineChartViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let tbvCell = tableView.dequeueReusableCell(withIdentifier: "PlayerTableViewCell", for: indexPath) as! PlayerTableViewCell
-        tbvCell.configureCell(player: dataArr[indexPath.row])
+        if selIndex == indexPath.row {
+            tbvCell.configureCell(WithPlayerModel: dataArr[indexPath.row], WithSelectedCell: true)
+        } else {
+            tbvCell.configureCell(WithPlayerModel: dataArr[indexPath.row], WithSelectedCell: false)
+        }
+        
         return tbvCell
     }
     
@@ -60,6 +70,22 @@ extension LineChartViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
+        selIndex = indexPath.row
+        tbv.reloadData()
     }
+}
+
+extension LineChartViewController {
+    private func buildCharts() {
+//        var dataSets : [LineChartDataSet] = [LineChartDataSet]()
+//        //for _dataM in completeArr {
+//        let set = setupChart(_dataArr: _dataM.allGraphs!)
+//        dataSets.append(set)
+//        //}
+//
+//        let lineChartData = LineChartData(dataSets: dataSets)
+//        self.lineChartView.data = lineChartData
+//        lineChartView.animate(xAxisDuration: 2.0)
+    }
+
 }

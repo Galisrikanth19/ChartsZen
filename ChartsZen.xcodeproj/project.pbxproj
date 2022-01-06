@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040588B527861337007408CE /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040588B427861337007408CE /* ThemeManager.swift */; };
 		0475C8AD2784CE7C000CCFBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475C8AC2784CE7C000CCFBE /* AppDelegate.swift */; };
 		0475C8AF2784CE7C000CCFBE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475C8AE2784CE7C000CCFBE /* SceneDelegate.swift */; };
 		0475C8B12784CE7C000CCFBE /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475C8B02784CE7C000CCFBE /* LineChartViewController.swift */; };
@@ -19,9 +20,11 @@
 		0475C8CA2784DD84000CCFBE /* ChartsJsonData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0475C8C92784DD84000CCFBE /* ChartsJsonData.json */; };
 		0475C8CE27852082000CCFBE /* PlayersDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475C8CD27852082000CCFBE /* PlayersDataModel.swift */; };
 		0475C8D727852F42000CCFBE /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0475C8D627852F42000CCFBE /* PlayerTableViewCell.swift */; };
+		19439109A5CCF1C28CFF7CEC /* Pods_ChartsZen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8F098178C435B2EFBBB3EF5 /* Pods_ChartsZen.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040588B427861337007408CE /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		0475C8A92784CE7C000CCFBE /* ChartsZen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartsZen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0475C8AC2784CE7C000CCFBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0475C8AE2784CE7C000CCFBE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +39,9 @@
 		0475C8C92784DD84000CCFBE /* ChartsJsonData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChartsJsonData.json; sourceTree = "<group>"; };
 		0475C8CD27852082000CCFBE /* PlayersDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersDataModel.swift; sourceTree = "<group>"; };
 		0475C8D627852F42000CCFBE /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
+		7CED60E36A6FA94515EA6A7F /* Pods-ChartsZen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartsZen.release.xcconfig"; path = "Target Support Files/Pods-ChartsZen/Pods-ChartsZen.release.xcconfig"; sourceTree = "<group>"; };
+		C8F098178C435B2EFBBB3EF5 /* Pods_ChartsZen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartsZen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F214435628724A6ECEF34BC9 /* Pods-ChartsZen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartsZen.debug.xcconfig"; path = "Target Support Files/Pods-ChartsZen/Pods-ChartsZen.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +49,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19439109A5CCF1C28CFF7CEC /* Pods_ChartsZen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		044155042787722E00890D54 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				040588B427861337007408CE /* ThemeManager.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		044155062787724500890D54 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0475C8D627852F42000CCFBE /* PlayerTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		0475C8A02784CE7C000CCFBE = {
 			isa = PBXGroup;
 			children = (
 				0475C8AB2784CE7C000CCFBE /* ChartsZen */,
 				0475C8AA2784CE7C000CCFBE /* Products */,
+				F69AE2923C1FAA35FA34DDC2 /* Pods */,
+				B5925FCC0AA060CA5CFE4A20 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +96,7 @@
 				0475C8AC2784CE7C000CCFBE /* AppDelegate.swift */,
 				0475C8AE2784CE7C000CCFBE /* SceneDelegate.swift */,
 				0475C8D327852731000CCFBE /* SourceCode */,
+				044155042787722E00890D54 /* Utility */,
 				0475C8D427852745000CCFBE /* Resources */,
 				0475C8B72784CE7E000CCFBE /* LaunchScreen.storyboard */,
 				0475C8BA2784CE7E000CCFBE /* Info.plist */,
@@ -81,7 +107,7 @@
 		0475C8C62784DB9F000CCFBE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0475C8D627852F42000CCFBE /* PlayerTableViewCell.swift */,
+				044155062787724500890D54 /* Cells */,
 				0475C8B02784CE7C000CCFBE /* LineChartViewController.swift */,
 				0475C8C12784D966000CCFBE /* BarChartViewController.swift */,
 				0475C8C32784D975000CCFBE /* PieChartViewController.swift */,
@@ -125,6 +151,23 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		B5925FCC0AA060CA5CFE4A20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8F098178C435B2EFBBB3EF5 /* Pods_ChartsZen.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F69AE2923C1FAA35FA34DDC2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F214435628724A6ECEF34BC9 /* Pods-ChartsZen.debug.xcconfig */,
+				7CED60E36A6FA94515EA6A7F /* Pods-ChartsZen.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0475C8BD2784CE7E000CCFBE /* Build configuration list for PBXNativeTarget "ChartsZen" */;
 			buildPhases = (
+				07FB4817A4FBB64C5B9C674C /* [CP] Check Pods Manifest.lock */,
 				0475C8A52784CE7C000CCFBE /* Sources */,
 				0475C8A62784CE7C000CCFBE /* Frameworks */,
 				0475C8A72784CE7C000CCFBE /* Resources */,
+				A3826C217DBA3FC1D327CC1E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +236,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		07FB4817A4FBB64C5B9C674C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChartsZen-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3826C217DBA3FC1D327CC1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChartsZen/Pods-ChartsZen-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChartsZen/Pods-ChartsZen-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChartsZen/Pods-ChartsZen-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0475C8A52784CE7C000CCFBE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -201,6 +288,7 @@
 				0475C8C22784D966000CCFBE /* BarChartViewController.swift in Sources */,
 				0475C8CE27852082000CCFBE /* PlayersDataModel.swift in Sources */,
 				0475C8D727852F42000CCFBE /* PlayerTableViewCell.swift in Sources */,
+				040588B527861337007408CE /* ThemeManager.swift in Sources */,
 				0475C8AD2784CE7C000CCFBE /* AppDelegate.swift in Sources */,
 				0475C8C42784D975000CCFBE /* PieChartViewController.swift in Sources */,
 				0475C8AF2784CE7C000CCFBE /* SceneDelegate.swift in Sources */,
@@ -347,6 +435,7 @@
 		};
 		0475C8BE2784CE7E000CCFBE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F214435628724A6ECEF34BC9 /* Pods-ChartsZen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -366,6 +455,7 @@
 		};
 		0475C8BF2784CE7E000CCFBE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CED60E36A6FA94515EA6A7F /* Pods-ChartsZen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

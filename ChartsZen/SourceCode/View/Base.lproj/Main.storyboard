@@ -91,11 +91,19 @@
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tau-Z6-9L7" customClass="LineChartView" customModule="Charts">
+                                        <rect key="frame" x="252.5" y="0.0" width="555.5" height="344"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="c2g-jF-fKM" firstAttribute="width" secondItem="ahO-PH-Qet" secondAttribute="width" multiplier="0.3" id="417-cH-dqE"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tau-Z6-9L7" secondAttribute="trailing" id="5pw-Pe-3Ge"/>
+                                    <constraint firstItem="Tau-Z6-9L7" firstAttribute="top" secondItem="ahO-PH-Qet" secondAttribute="top" id="89F-fO-hs9"/>
                                     <constraint firstAttribute="bottom" secondItem="c2g-jF-fKM" secondAttribute="bottom" constant="10" id="EBs-tc-bFE"/>
+                                    <constraint firstAttribute="bottom" secondItem="Tau-Z6-9L7" secondAttribute="bottom" id="Fqm-Df-dOi"/>
+                                    <constraint firstItem="Tau-Z6-9L7" firstAttribute="leading" secondItem="c2g-jF-fKM" secondAttribute="trailing" id="Jko-8K-vdh"/>
                                     <constraint firstItem="c2g-jF-fKM" firstAttribute="top" secondItem="ahO-PH-Qet" secondAttribute="top" constant="10" id="UIj-mv-GO8"/>
                                     <constraint firstItem="c2g-jF-fKM" firstAttribute="leading" secondItem="ahO-PH-Qet" secondAttribute="leading" constant="10" id="Zyo-D8-z9k"/>
                                 </constraints>
@@ -112,6 +120,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Line Chart" image="line-chart" id="Aja-vy-ljM"/>
                     <connections>
+                        <outlet property="lineChartView" destination="Tau-Z6-9L7" id="iOf-AD-MTI"/>
                         <outlet property="tbv" destination="c2g-jF-fKM" id="A5T-yO-cOQ"/>
                     </connections>
                 </viewController>

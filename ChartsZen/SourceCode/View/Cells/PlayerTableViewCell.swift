@@ -24,12 +24,18 @@ class PlayerTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func configureCell(player: Player) {
+    func configureCell(WithPlayerModel player: Player, WithSelectedCell selCell:Bool) {
         customizeView()
         self.player = player
         titleLbl.text = player.name
         nationalityLbl.text = player.nationality
         statusLbl.text = player.status
+        
+        if selCell {
+            bgView.backgroundColor = UIColor(red:222/255, green:225/255, blue:227/255, alpha: 1)
+        } else {
+            bgView.backgroundColor = .white
+        }
     }
     
     private func customizeView() {

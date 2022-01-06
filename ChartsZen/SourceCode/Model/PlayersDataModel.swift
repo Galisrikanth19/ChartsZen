@@ -18,6 +18,13 @@ struct Player: Codable {
     let nationality: String?
     let status: String?
     let history: [History]?
+    
+    init(_name: String, _nationality: String? = nil, _status: String? = nil, _history: [History]? = nil) {
+        name = _name
+        nationality = _nationality
+        status = _status
+        history = _history
+    }
 }
 
 struct History: Codable {
