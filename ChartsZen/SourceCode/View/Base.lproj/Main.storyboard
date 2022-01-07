@@ -127,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="884" y="-783"/>
+            <point key="canvasLocation" x="884" y="-797"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="o7k-My-a2W">
@@ -142,6 +142,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="zmp-fW-ZrT"/>
                         <segue destination="GXI-Ei-maq" kind="relationship" relationship="viewControllers" id="f7K-FV-2V5"/>
+                        <segue destination="Ye3-v3-Fjm" kind="relationship" relationship="viewControllers" id="eJ5-K8-6IM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qLJ-LY-pkH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -267,6 +268,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vOE-Xc-v6a" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="884" y="86"/>
+        </scene>
+        <!--Pie Chart-->
+        <scene sceneID="yjO-ax-AqC">
+            <objects>
+                <viewController id="Ye3-v3-Fjm" customClass="PieChartViewController" customModule="ChartsZen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vsO-kR-lZc">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IoO-4z-wqW">
+                                <rect key="frame" x="44" y="0.0" width="808" height="344"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wzB-y6-6Tn" customClass="PieChartView" customModule="Charts">
+                                        <rect key="frame" x="267" y="10" width="274" height="324"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="wzB-y6-6Tn" secondAttribute="height" multiplier="1:1" constant="-50" id="1bI-u6-ipS"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="wzB-y6-6Tn" firstAttribute="top" secondItem="IoO-4z-wqW" secondAttribute="top" constant="10" id="3HX-jN-IkJ"/>
+                                    <constraint firstItem="wzB-y6-6Tn" firstAttribute="centerX" secondItem="IoO-4z-wqW" secondAttribute="centerX" id="a3F-RU-5Ab"/>
+                                    <constraint firstAttribute="bottom" secondItem="wzB-y6-6Tn" secondAttribute="bottom" constant="10" id="ssE-bf-FnE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OXz-Kn-nNf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OXz-Kn-nNf" firstAttribute="bottom" secondItem="IoO-4z-wqW" secondAttribute="bottom" id="6x0-Ld-Ke5"/>
+                            <constraint firstItem="IoO-4z-wqW" firstAttribute="top" secondItem="OXz-Kn-nNf" secondAttribute="top" id="b5H-sJ-m4a"/>
+                            <constraint firstItem="OXz-Kn-nNf" firstAttribute="trailing" secondItem="IoO-4z-wqW" secondAttribute="trailing" id="b8N-8t-kNT"/>
+                            <constraint firstItem="IoO-4z-wqW" firstAttribute="leading" secondItem="OXz-Kn-nNf" secondAttribute="leading" id="mAy-Iu-mTK"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pie Chart" image="line-chart" id="YBA-xO-L5x"/>
+                    <connections>
+                        <outlet property="chartView" destination="wzB-y6-6Tn" id="eBI-6c-8PJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4uP-fk-tpI" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884" y="962"/>
         </scene>
     </scenes>
     <resources>
